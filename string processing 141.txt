@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class mains extends UserMainCode{
+public static void main(String []args){
+Scanner s =new Scanner(System.in);
+System.out.println("enter string");
+String word=s.nextLine();
+System.out.println("enter the digit");
+int digit=s.nextInt();
+findFruitName(word,digit);
+}}
+class UserMainCode{
+ static String findFruitName(String list,int digit){
+     String[] fruits=list.split(",");
+     if(fruits.length>=digit)
+     System.out.println(fruits[digit-1]);
+     if(fruits.length<digit)
+     System.out.println(fruits[fruits.length-1]);
+     return list;
+ }}
